@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 export const UserList = () => {
-    const [items, setItems]=useState([])
+    const [user, setUser]=useState([])
 
     useEffect(()=>{
-        setItems([
-            {text:"Balbuena", id:0},
-            {text:"Santos", id:1}
+        setUser([
+            {lastName:"Balbuena", id:0},
+            {lastName:"Santos", id:1}
         ])
     },[])
     return (
@@ -22,19 +22,19 @@ export const UserList = () => {
             </thead>
             <tbody>
                 {
-                items.map(info =>(
-                 <tr key={info._id}>
+                user.map(user =>(
+                 <tr key={user._id}>
                      <td>
-                         {info.lastName}
+                         {user.lastName}
                      </td>
                      <td>
-                        {info.firstName}
+                        {user.firstName}
                      </td>
                      <td>
-                        {info.midName}
+                        {user.midName}
                     </td>    
                     <td>
-                    <Link to={`/edit/${info._id}`}>Edit</Link>
+                    <Link to={`/edit/${user._id}`}>Edit</Link>
                     </td>       
                  </tr>
                  ))

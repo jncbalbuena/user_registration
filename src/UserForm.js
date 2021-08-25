@@ -21,7 +21,6 @@ export const UserForm = ({user, onSubmit}) => {
     return (
         <div className= 'container'>
             <div className='mt-3'>
-                <h1><strong>Edit Information</strong></h1>
                 <p style={{fontSize:15}}>Please fill in the details to register an account.</p>
                 <hr></hr>
         <form onSubmit={submitHandler}>
@@ -75,7 +74,7 @@ export const UserForm = ({user, onSubmit}) => {
             </div>
             <div className="form-group">
                 <button type="submit" className="btn btn-primary">
-                    Register
+                    Save
                 </button>
             </div>
         </form>
