@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import { UserList} from "./UserList";
 import { UserRegistration } from "./UserRegistration";
-
+import {EditInfo} from './EditInfo'
 function App() {
   return (
     <div>
@@ -19,6 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={UserList} />
         <Route path="/userlist" component={UserRegistration}/>
+        <Route path='/edit/' component={EditInfo}/>
       </Switch>
     </div>
   );
