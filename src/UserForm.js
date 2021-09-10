@@ -25,7 +25,7 @@ export const UserForm = ({user, onSubmit}) => {
                 <hr></hr>
         <form onSubmit={submitHandler}>
             <div className="form-group">
-                <label htmlFor="text">Last Name</label>
+                <label htmlFor="lastName">Last Name</label>
                 <input className="form-control"
                        {...register('lastName')}
                        type="text"
@@ -67,7 +67,7 @@ export const UserForm = ({user, onSubmit}) => {
                 <label htmlFor="text">Email</label>
                 <input className="form-control"
                        {...register('email')}
-                       type="email"
+                       type="text"
                        id="email"
                        required
                 />

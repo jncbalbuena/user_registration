@@ -19,7 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={UserList} />
         <Route path="/userlist" component={UserRegistration}/>
-        <Route path='/edit/' component={EditInfo}/>
+        <Route path='/edit/:id' component={EditInfo}/>
       </Switch>
     </div>
   );
