@@ -18,8 +18,8 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/" component={UserList} />
-        <Route path="/userlist" component={UserRegistration}/>
         <Route path='/edit/:id' component={EditInfo}/>
+        <Route path="/userlist" component={UserRegistration}/>
       </Switch>
     </div>
   );
