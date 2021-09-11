@@ -15,7 +15,7 @@ export const EditInfo = () => {
            setUser(user)
        }
        fetchUsers()
-   },[]);
+   },);
 
    const onSubmit =async (data) =>{
     await updateUser(data, match.params.id)

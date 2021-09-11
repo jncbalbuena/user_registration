@@ -19,4 +19,4 @@ export const updateUser = (user, id) => fetch(`http://localhost:4000/${id}`, {
 })  
 
 
-export const getUser = (id) => fetch("http://localhost:4000/${id}").then(res=>res.json())
+export const getUser = (id) => fetch(`http://localhost:4000/${id}`).then(res=>res.json())

@@ -20,6 +20,11 @@ export const UserList = () => {
             <thead>
                 <tr>
                 <th>Last Name</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Birthdate</th>
+                <th>Gender</th>
+                <th>Email</th>
                 <th>Action</th>
                 </tr>
             </thead>
@@ -27,9 +32,12 @@ export const UserList = () => {
                 {
                 users.map(user =>(
                  <tr key={user._id}>
-                     <td>
-                        {user.lastName}
-                    </td>
+                     <td>{user.lastName}</td>
+                     <td>{user.firstName}</td>
+                     <td>{user.midName}</td>
+                     <td>{user.birthDate}</td>
+                     <td>{user.gender}</td>
+                     <td>{user.email}</td>
                     <td>
                     <Link to={`/edit/${user._id}`}>Edit</Link>
                     </td>  
